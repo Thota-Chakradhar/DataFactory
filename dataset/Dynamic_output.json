@@ -1,0 +1,45 @@
+{
+	"name": "Dynamic_output",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"Container_output": {
+				"type": "string"
+			},
+			"Directory_output": {
+				"type": "string"
+			},
+			"File_output": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": {
+					"value": "@dataset().File_output",
+					"type": "Expression"
+				},
+				"folderPath": {
+					"value": "@dataset().Directory_output",
+					"type": "Expression"
+				},
+				"container": {
+					"value": "@dataset().Container_output",
+					"type": "Expression"
+				}
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

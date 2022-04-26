@@ -1,0 +1,54 @@
+{
+	"name": "Dynamic_SqlTable",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Dynamic_SqlDatabase",
+			"type": "LinkedServiceReference",
+			"parameters": {
+				"Domain": {
+					"value": "@dataset().Domain",
+					"type": "Expression"
+				},
+				"Database": {
+					"value": "@dataset().Database",
+					"type": "Expression"
+				},
+				"Username": {
+					"value": "@dataset().Username",
+					"type": "Expression"
+				},
+				"Password": {
+					"value": "@dataset().Password",
+					"type": "Expression"
+				}
+			}
+		},
+		"parameters": {
+			"Domain": {
+				"type": "String"
+			},
+			"Database": {
+				"type": "String"
+			},
+			"Username": {
+				"type": "String"
+			},
+			"Password": {
+				"type": "String"
+			},
+			"TableName": {
+				"type": "String"
+			}
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"table": {
+				"value": "@dataset().TableName",
+				"type": "Expression"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

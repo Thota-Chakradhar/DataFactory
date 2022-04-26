@@ -1,0 +1,9 @@
+{
+	"name": "chakridatafactory",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "96ac7b56-27a3-4742-aa53-ae2b6d58a5fe",
+		"tenantId": "e401b94a-3f04-43a7-b132-c1408093d776"
+	}
+}

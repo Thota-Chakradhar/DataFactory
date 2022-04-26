@@ -1,0 +1,25 @@
+{
+	"name": "Dynamic_SqlDatabase",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"parameters": {
+			"Domain": {
+				"type": "string"
+			},
+			"Database": {
+				"type": "string"
+			},
+			"Username": {
+				"type": "string"
+			},
+			"Password": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"connectionString": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=@{linkedService().Domain};Initial Catalog=@{linkedService().Database};User ID=@{linkedService().Username};Password=@{linkedService().Password}"
+		}
+	}
+}
