@@ -8,11 +8,9 @@
 		"annotations": [],
 		"type": "Excel",
 		"typeProperties": {
-			"sheetName": "Raisin_Grains_Dataset",
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"fileName": "Raisin_Dataset.xlsx",
-				"folderPath": "Raisin",
+				"fileName": "adult.xlsx",
 				"container": "chakri"
 			},
 			"firstRowAsHeader": true
