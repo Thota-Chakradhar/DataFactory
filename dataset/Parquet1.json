@@ -10,7 +10,8 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"folderPath": "Adult/Adult_partitioned_2",
+				"fileName": "part-00000-tid-7776849578866145072-72a09356-4af5-4ee4-8afb-292ea694a387-1-5.c000.snappy.parquet",
+				"folderPath": "Adult/Adult_partitioned_2/Country= Columbia",
 				"fileSystem": "chakri"
 			},
 			"compressionCodec": "snappy"
