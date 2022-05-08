@@ -10,7 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"folderPath": "Adult",
+				"folderPath": "Adult/Adult_partitioned_2",
 				"fileSystem": "chakri"
 			},
 			"compressionCodec": "snappy"
