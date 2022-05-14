@@ -1,0 +1,21 @@
+{
+	"name": "ADLS_Serviceprincipal",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://chakridatalake.dfs.core.windows.net",
+			"tenant": "e401b94a-3f04-43a7-b132-c1408093d776",
+			"servicePrincipalId": "387f5eee-dc01-460d-b1d3-8ca7796c75c6",
+			"servicePrincipalCredentialType": "ServicePrincipalKey",
+			"servicePrincipalCredential": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "AzureKeyVault1",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "chakri-app-2"
+			}
+		}
+	}
+}
